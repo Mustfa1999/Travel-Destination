@@ -1,11 +1,13 @@
+import "./Footer.css";
+
 function Footer() {
     return(
-        <>
-        <a href="www.facebook.com"> Facebook </a>
-        <a href="www.youtube.com"> Youtube </a>
-        <a href="www.twitter.com"> Twitter </a>
-        <p> Author: Mustafa Alhasanat </p>
-        </>
+        <div id="foot">
+            <a href="facebook" className="item"> Facebook </a>
+            <a href="youtube" className="item"> Youtube </a>
+            <a href="twitter" className="item"> Twitter </a>
+            <p className="item"> Author: Mustafa Alhasanat </p>
+        </div>
     );
 }
 

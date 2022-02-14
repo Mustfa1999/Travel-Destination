@@ -1,8 +1,12 @@
+import Navbar from "../Navbar/Navbar";
+import "./Header.css";
+
 function Header() {
     return(
-        <>
-        <h1> Traveling Website </h1>
-        </>
+        <div id="bar">
+            <h1> Traveling Website</h1>
+            <Navbar/>
+        </div>
     );
 }
 
