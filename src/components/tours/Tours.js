@@ -1,18 +1,18 @@
+import Tour from "./tour/Tour.js";
+import {Link} from "react-router-dom";
+import "./Tours.css";
+
 function Tours(props) {
     return(
-        <>
+        <div id="mainDiv">
         {
-            props.toursData.map(item => {
+            props.myData.map(item => {
                 return(
-                    <div>
-                        <h3> {item.name} </h3>
-                        <img src={item.image} alt="image"></img>
-                        <hr></hr>
-                    </div>
+                    <Link id="card" to={`/city/${item.id}`}> <Tour tour={item} key={item.id}/> </Link>
                 );
             })
         }
-        </>
+        </div>
     );
 }
 
